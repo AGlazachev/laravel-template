@@ -1,0 +1,10 @@
+.body {
+    font-family: var(--f-primary);
+    font-size: var(--f-s-body);
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    color: var(--c-text);
+    &._no-scroll {
+        overflow: hidden;
+    }
+}

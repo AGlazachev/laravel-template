@@ -1,0 +1,15 @@
+.btn {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    padding: 18px 20px;
+    border-radius: var(--border-radius);
+    font-family: var(--f-primary);
+    line-height: 1;
+    text-align: center;
+    color: var(--btn);
+    background-color: var(--c-white);
+    transition: var(--transitions);
+}

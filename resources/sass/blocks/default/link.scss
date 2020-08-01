@@ -1,0 +1,21 @@
+.link {
+    --linkActiveOpacity: 0.6;
+    color: var(--c-text);
+    transition: var(--transitions);
+    &:hover {
+        color: var(--c-primary);
+    }
+    &:active {
+        color: var(--c-primary);
+        opacity: 0.6;
+    }
+
+    &._active {
+        opacity: var(--linkActiveOpacity);
+        cursor: default;
+        &:hover, &:active  {
+            color: inherit;
+            opacity: var(--linkActiveOpacity);
+        }
+    }
+}

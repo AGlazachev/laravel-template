@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+// Защита от переполнения
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// Обнуление отступов по умолчанию у списков
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    border: none;
+    font: inherit;
+    outline: none;
+
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+
+select {
+    font: inherit;
+}
+
+textarea {
+    font: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+svg {
+    pointer-events: none;
+}

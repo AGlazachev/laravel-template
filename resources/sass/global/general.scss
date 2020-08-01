@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.clearfix {
+    zoom: 1;
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+    }
+    &::after {
+        clear: both;
+    }
+}
+
+#svg-icons {
+    display: none;
+}

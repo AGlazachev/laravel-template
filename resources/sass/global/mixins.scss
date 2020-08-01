@@ -1,0 +1,21 @@
+@mixin font-face($f-name, $f-weight: normal, $f-style: normal) {
+    @font-face {
+        font-family: "#{$f-name}";
+        src: url("/assets/fonts/#{$f-name}.eot");
+        src: url("/assets/fonts/#{$f-name}?#iefix") format("embedded-opentype"),
+        url("/assets/fonts/#{$f-name}.woff2") format("woff2"),
+        url("/assets/fonts/#{$f-name}.woff") format("woff"),
+        url("/assets/fonts/#{$f-name}.ttf") format("truetype"),
+        url("/assets/fonts/#{$f-name}.svg#Circe-Regular") format("svg");
+        font-weight: $f-weight;
+        font-style: $f-style;
+        font-display: swap;
+    }
+}
+
+@mixin truncate-lines($n) {
+    display: -webkit-box;
+    -webkit-line-clamp: $n;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

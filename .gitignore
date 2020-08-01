@@ -1,0 +1,15 @@
+/node_modules
+/public/assets
+/public/css
+/public/js
+/storage/*.key
+/vendor
+/resources/assets/img/sprite.svg
+.idea
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log

@@ -1,0 +1,13 @@
+.header {
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__container-bottom {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+}

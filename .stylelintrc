@@ -1,0 +1,431 @@
+{
+    "plugins": [
+        "stylelint-order"
+    ],
+    "rules": {
+        "order/order": [
+            "custom-properties",
+            "declarations"
+        ],
+        "order/properties-order": [
+            "position",
+            "z-index",
+            "top",
+            "bottom",
+            "right",
+            "left",
+            "order",
+            "float",
+            "grid-row",
+            "grid-column",
+            "display",
+            "place-items",
+            "grid-template-rows",
+            "grid-template-columns",
+            "flex-flow",
+            "justify-content",
+            "align-items",
+            "align-self",
+            "width",
+            "max-width",
+            "min-width",
+            "height",
+            "max-height",
+            "max-height",
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+            "border",
+            "border-top",
+            "border-right",
+            "border-bottom",
+            "border0left",
+            "border-radius",
+            "border-color",
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left",
+            "font-family",
+            "font-size",
+            "font-weight",
+            "line-height",
+            "text-align",
+            "text-decoration",
+            "color",
+            "object-fit",
+            "object-position",
+            "background",
+            "background-size",
+            "background-color",
+            "box-shadow",
+            "fill",
+            "opacity",
+            "animation",
+            "transition",
+            "transform",
+            "cursor",
+            "outline"
+        ],
+        "color-no-invalid-hex":[
+            true,
+            {
+                "message": "Ошибка в hex цвета"
+            }
+        ],
+        "font-family-no-duplicate-names":[
+            true,
+            {
+                "message": "Одинаковые названия шрифтов"
+            }
+        ],
+        "font-family-no-missing-generic-family-keyword":[
+            true,
+            {
+                "message": "Нет основных шрифтов"
+            }
+        ],
+        "function-calc-no-invalid":[
+            true,
+            {
+                "message": "Ошибка в функции calc"
+            }
+        ],
+        "function-calc-no-unspaced-operator":[
+            true,
+            {
+                "message": "calc поставь пробелы между знаками"
+            }
+        ],
+        "function-linear-gradient-no-nonstandard-direction":[
+            true,
+            {
+                "message": "Градиент написан с ошибками"
+            }
+        ],
+        "string-no-newline":[
+            true,
+            {
+                "message": "Ненужный перенос на новую строку"
+            }
+        ],
+        "unit-no-unknown":[
+            true,
+            {
+                "message": "Ошибка в единицах измерения"
+            }
+        ],
+        "property-no-unknown":[
+            true,
+            {
+                "message": "Ошибка при написании селектора"
+            }
+        ],
+        "keyframe-declaration-no-important":[
+            true,
+            {
+                "message": "!important в keyframes"
+            }
+        ],
+        "declaration-block-no-duplicate-properties":[
+            true,
+            {
+                "message": "Дубли свойств"
+            }
+        ],
+        "declaration-block-no-shorthand-property-overrides":[
+            true,
+            {
+                "message": "Свойство перебивает другое"
+            }
+        ],
+        "block-no-empty":[
+            true,
+            {
+                "message": "Классы без свойств"
+            }
+        ],
+        "selector-pseudo-class-no-unknown":[
+            true,
+            {
+                "message": "Ошибка в написании псевдокласса"
+            }
+        ],
+        "selector-pseudo-element-no-unknown":[
+            true,
+            {
+                "message": "Ошибка в написании псевдоэлемента"
+            }
+        ],
+        "media-feature-name-no-unknown":[
+            true,
+            {
+                "message": "Ошибка в медиазапросе"
+            }
+        ],
+        "at-rule-no-unknown":[
+            true,
+            {
+                "message": "Ошибка в @",
+                "ignoreAtRules": ["import", "include", "mixin"]
+            }
+        ],
+        "comment-no-empty":[
+            true,
+            {
+                "message": "Пустой комментарий"
+            }
+        ],
+        "no-duplicate-at-import-rules":[
+            true,
+            {
+                "message": "Дубли импорта"
+            }
+        ],
+        "no-duplicate-selectors":[
+            true,
+            {
+                "message": "Дубли селекторов"
+            }
+        ],
+        "no-extra-semicolons":[
+            true,
+            {
+                "message": "Дубль ;;"
+            }
+        ],
+        "no-invalid-double-slash-comments":[
+            true, {}
+        ],
+        "alpha-value-notation":[
+            "number",
+            {
+                "message": "Используй 0.5 вместо %"
+            }
+        ],
+        "hue-degree-notation":[
+            "number",
+            {
+                "message": "Используй цифры вместо deg"
+            }
+        ],
+        "color-function-notation":[
+            "legacy",
+            {
+                "message": "Цвета задаются через запятую"
+            }
+        ],
+        "color-named":[
+            "never",
+            {
+                "message": "Цвета задавать только через значения"
+            }
+        ],
+        "color-no-hex":[
+            true,
+            {
+                "message": "Цвета только в формате rgb"
+            }
+        ],
+        "length-zero-no-unit":[
+            true,
+            {
+                "message": "У 0 не может быть размерности"
+            }
+        ],
+        "font-weight-notation":[
+            "numeric",
+            {
+                "message": "У 0 не может быть размерности"
+            }
+        ],
+        "number-max-precision":[
+            2,
+            {
+                "message": "Числов цифр после запятой"
+            }
+        ],
+        "shorthand-property-no-redundant-values":[
+            true,
+            {
+                "message": "Можно свернуть свойства"
+            }
+        ],
+        "value-no-vendor-prefix":[
+            true,
+            {
+                "message": "Префиксы удалить",
+                "ignoreValues": ["box"]
+            }
+        ],
+        "property-no-vendor-prefix":[
+            true,
+            {
+                "message": "Префиксы удалить",
+                "ignoreProperties": ["box-orient"]
+            }
+        ],
+        "selector-no-vendor-prefix":[
+            true,
+            {
+                "message": "Префиксы удалить"
+            }
+        ],
+        "media-feature-name-no-vendor-prefix":[
+            true,
+            {
+                "message": "Префиксы удалить"
+            }
+        ],
+        "at-rule-no-vendor-prefix":[
+            true,
+            {
+                "message": "Префиксы удалить"
+            }
+        ],
+        "declaration-property-unit-whitelist":[
+            {
+                "line-height": [],
+                "/^animation/": ["s"]
+            }
+        ],
+        "declaration-block-single-line-max-declarations":[
+            1,
+            {
+                "message": "В строке только одно свойство"
+            }
+        ],
+        "selector-max-attribute":[
+            1
+        ],
+        "selector-max-combinators":[
+            4
+        ],
+        "selector-max-compound-selectors":[
+            4
+        ],
+        "selector-max-empty-lines":[
+            1
+        ],
+        "selector-max-id":[
+            1
+        ],
+        "selector-max-specificity":[
+            "1,2,1"
+        ],
+        "selector-max-type":[
+            1
+        ],
+        "selector-max-universal":[
+            1
+        ],
+        "selector-no-qualifying-type":[
+            true,
+            {
+                "message": "Не использвовать связку a.foo"
+            }
+        ],
+        "selector-pseudo-element-colon-notation":[
+            "double",
+            {
+                "message": "Использовать ::before"
+            }
+        ],
+        "max-nesting-depth":[
+            3,
+            {
+                "ignore": ["pseudo-classes"]
+            }
+        ],
+        "color-hex-case":[
+            "upper",
+            {
+                "message": "формат цвета: #FFF"
+            }
+        ],
+        "color-hex-length":[
+            "short",
+            {
+                "message": "формат цвета: #FFF"
+            }
+        ],
+        "font-family-name-quotes":[
+            "always-where-recommended"
+        ],
+        "function-comma-newline-after":[
+            "never-multi-line"
+        ],
+        "function-comma-newline-before":[
+            "never-multi-line"
+        ],
+        "function-comma-space-after":[
+            "always"
+        ],
+        "function-comma-space-before":[
+            "never"
+        ],
+        "function-name-case":[
+            "lower"
+        ],
+        "function-parentheses-newline-inside":[
+            "never-multi-line"
+        ],
+        "function-parentheses-space-inside":[
+            "never"
+        ],
+        "function-url-quotes":[
+            "always"
+        ],
+        "function-whitespace-after":[
+            "always"
+        ],
+        "number-leading-zero":[
+            "always"
+        ],
+        "number-no-trailing-zeros":[
+            true
+        ],
+        "string-quotes":[
+            "double"
+        ],
+        "unit-case":[
+            "lower"
+        ],
+        "value-keyword-case":[
+            "lower"
+        ],
+        "value-list-max-empty-lines":[
+            0
+        ],
+        "custom-property-empty-line-before":[
+            "never"
+        ],
+        "property-case":[
+            "lower"
+        ],
+        "declaration-bang-space-after":[
+            "never"
+        ],
+        "declaration-bang-space-before":[
+            "always"
+        ],
+        "declaration-colon-space-before":[
+            "never"
+        ],
+        "declaration-empty-line-before":[
+            "never"
+        ],
+        "declaration-block-semicolon-newline-after":[
+            "always-multi-line"
+        ],
+        "declaration-block-semicolon-newline-before":[
+            "never-multi-line"
+        ],
+        "no-eol-whitespace":[
+            true
+        ]
+    }
+}

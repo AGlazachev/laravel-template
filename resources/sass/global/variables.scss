@@ -1,0 +1,47 @@
+//Сетка
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1590px
+);
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1560px
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+:root {
+    //Шрифты
+    --f-primary: "Raleway-Regular", arial, sans-serif;
+    --f-primary-semibold: "Raleway-SemiBold", arial, sans-serif;
+    --f-secondary-light: "RobotoSlab-Light", arial, sans-serif;
+    --f-s-title: 70px;
+    --f-s-h2: 50px;
+    --f-s-h3: 35px;
+    --f-s-h4: 20px;
+    --f-s-body: 18px;
+    --f-s-menu: 14px;
+
+    //Цвета
+    --c-primary: rgb(208, 223, 7);
+    --c-primary-dark: rgba(208, 223, 7, 0.5);
+    --c-text: rgb(135, 135, 135);
+    --c-lines: rgb(205, 220, 7);
+    --c-bg: rgb(226, 226, 226);
+    --c-bg-secondary: rgb(245, 245, 245);
+    --c-white: rgb(255, 255, 255);
+    --c-black: rgb(0, 0, 0);
+
+    //Дополнительно
+    --border: 1px solid var(--c-lines);
+    --border-radius: 4px;
+    --transitions: all 0.4s ease;
+}

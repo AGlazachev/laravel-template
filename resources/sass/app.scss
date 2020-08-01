@@ -1,0 +1,22 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/icon";
+@import "global/scaffolding";
+@import "global/general";
+@import "global/animations";
+
+@import "layouts/body";
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "blocks/default/section";
+@import "blocks/default/text";
+@import "blocks/default/input";
+@import "blocks/default/btn";
+@import "blocks/default/link";
+
+@import "blocks/logo";
+@import "blocks/overlay";
